@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox layoutX="-4.0" layoutY="-2.0" prefHeight="650.0" prefWidth="1000.0">
+         <children>
+            <VBox prefHeight="325.0" prefWidth="500.0">
+               <children>
+                  <ScrollPane hbarPolicy="NEVER" prefViewportHeight="500.0" prefViewportWidth="500.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <GridPane gridLinesVisible="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="750.0" prefWidth="500.0" style="-fx-background-color: #F0F0F0;">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <ImageView depthTest="DISABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                 <image>
+                                    <Image url="@../../../../../../../Documents/III%20Semestre/Programacion%20II/IMPRESORA.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView depthTest="DISABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+                                 <image>
+                                    <Image url="@../../../../../../../Documents/III%20Semestre/Programacion%20II/IMPRESORA.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView depthTest="DISABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <image>
+                                    <Image url="@../../../../../../../Documents/III%20Semestre/Programacion%20II/IMPRESORA.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView depthTest="DISABLE" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <image>
+                                    <Image url="@../../../../../../../Documents/III%20Semestre/Programacion%20II/IMPRESORA.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+                  <Label alignment="TOP_LEFT" contentDisplay="TOP" nodeOrientation="LEFT_TO_RIGHT" text="Seleccione una impresora y escoga:" textOverrun="CLIP">
+                     <font>
+                        <Font name="Calibri" size="18.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets left="8.0" />
+                     </VBox.margin>
+                     <padding>
+                        <Insets left="10.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button mnemonicParsing="false" text="Detalles" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                        <Button mnemonicParsing="false" text="Eliminar" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                        <Button mnemonicParsing="false" text="Editar" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <padding>
+                        <Insets top="10.0" />
+                     </padding>
+                  </GridPane>
+               </children>
+            </VBox>
+            <VBox prefHeight="325.0" prefWidth="500.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

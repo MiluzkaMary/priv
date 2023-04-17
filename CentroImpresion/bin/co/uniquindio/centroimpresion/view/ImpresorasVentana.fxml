@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.5275689223057645" prefHeight="600.0" prefWidth="800.0">
+        <items>
+          <AnchorPane fx:id="anchorLeft" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label fx:id="label_1" layoutX="14.0" layoutY="14.0" text="Seleccione una Impresora:" />
+                  <ScrollPane fx:id="scrollTable" layoutX="14.0" layoutY="42.0" prefViewportHeight="379.0" prefViewportWidth="381.0">
+                     <content>
+                        <TableView fx:id="tableView" layoutX="14.0" layoutY="42.0" prefHeight="379.0" prefWidth="381.0">
+                          <columns>
+                            <TableColumn fx:id="columnaNombre" prefWidth="310.0" text="Impresora" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="btnDetalles" layoutX="14.0" layoutY="452.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Detalles" />
+                  <Button fx:id="btnEliminar" layoutX="155.0" layoutY="452.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Eliminar" />
+                  <Button fx:id="btnEditar" layoutX="297.0" layoutY="452.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="100.0" text="Editar" />
+                  <Button fx:id="btnAgregar" layoutX="155.0" layoutY="520.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="96.0" text="Agregar" />
+               </children>
+            </AnchorPane>
+          <AnchorPane fx:id="anchorRight" minHeight="0.0" minWidth="0.0" prefHeight="598.0" prefWidth="362.0">
+               <children>
+                  <Label fx:id="label_preferencias" layoutX="28.0" layoutY="22.0" text="Preferencias de Impresión">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_impresora" layoutX="14.0" layoutY="63.0" text="Impresora" />
+                  <ComboBox fx:id="cb_impresora" layoutX="15.0" layoutY="99.0" prefHeight="31.0" prefWidth="334.0" promptText="Seleccionar Impresora" />
+                  <Label fx:id="lbl_Orientacion" layoutX="15.0" layoutY="153.0" text="Orientación" />
+                  <Label fx:id="lblTamañoPapel" layoutX="14.0" layoutY="248.0" text="Tamaño de Papel:" />
+                  <ComboBox fx:id="cb_tamaño" layoutX="15.0" layoutY="284.0" prefHeight="31.0" prefWidth="334.0" />
+                  <Label fx:id="lblOpcionesColor" layoutX="15.0" layoutY="331.0" text="Opciones de Color:" />
+                  <RadioButton fx:id="rb_h" layoutX="18.0" layoutY="192.0" mnemonicParsing="false" text="Horizontal" />
+                  <RadioButton fx:id="rb_v" layoutX="219.0" layoutY="192.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="127.0" text="Vertical" />
+                  <RadioButton fx:id="rb_color" layoutX="18.0" layoutY="370.0" mnemonicParsing="false" text="Imprimir a Color ($300)" />
+                  <RadioButton fx:id="rb_blanconegro" layoutX="18.0" layoutY="414.0" mnemonicParsing="false" text="Imprimir a Blanco y Negro ($100)" />
+                  <Label fx:id="lblCopias" layoutX="18.0" layoutY="462.0" text="Copias" />
+                  <TextField fx:id="txtNumCopias" layoutX="75.0" layoutY="457.0" prefHeight="31.0" prefWidth="78.0" />
+                  <Button fx:id="btnArchivo" layoutX="19.0" layoutY="524.0" mnemonicParsing="false" text="Seleccionar Archivo" />
+                  <Button fx:id="btnImprimir" layoutX="197.0" layoutY="524.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="149.0" text="Imprimir" />
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</AnchorPane>
